@@ -6,3 +6,5 @@
 @media(prefers-reduced-motion:reduce){.branch-path,.action-branch,.replay-traveler,.hero-mechanism-mobile>div:before{animation:none}.prediction-traveler,.replay-traveler{display:none}.action-branch{opacity:1}}
 .hero-wrap .hero{padding-top:48px}.hero-wrap .hero-introduction{max-width:960px;margin:28px auto 24px;padding:17px 22px;font-size:15px;line-height:1.85}.hero-wrap .hero-introduction p:last-child{font-size:14px}.hero-wrap .hero-mechanism{margin-top:24px}.hero-wrap .hero-mechanism svg{max-width:990px;margin:10px auto 0}.hero-wrap .scroll-cue{margin-top:13px}
 @media(max-width:600px){.hero-wrap .hero{padding-top:45px}.hero-wrap .hero-introduction{padding:18px 0;font-size:14px;margin-top:26px}.hero-wrap .hero-introduction p:last-child{font-size:13px}}
+
+.anonymous-authors{margin-top:20px}.anonymous-authors>span{padding:0!important;border:0!important;font-size:13px!important;letter-spacing:.06em;color:#b0cdd5}

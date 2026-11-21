@@ -50,3 +50,5 @@
 @media(max-width:760px){.generalization{margin-top:0;padding-top:0}.generalization-inner{padding:64px 22px}.generalization .section-head h2{font-size:32px}}
 @media(max-width:520px){.generalization-inner{padding:57px 21px}.generalization .section-head h2{font-size:30px}}
 @media(max-width:520px){.conclusion-copy{font-size:13px}.conclusion-copy .conclusion-lead{font-size:18px}.conclusion-implication{padding-left:16px}.conclusion-implication h3{font-size:17px}.conclusion-implication p{font-size:13px}}
+
+.usage-rights{margin-top:38px;padding-top:26px;border-top:1px solid var(--line);max-width:900px}.usage-rights h3{font-size:18px;margin-bottom:14px}.usage-rights p{font-size:12px;line-height:1.9;color:var(--muted);margin-bottom:10px}
