@@ -1,0 +1,52 @@
+/* The visible and semantic hierarchy follows the paper sections. */
+.hero{padding:92px 24px 34px}
+.hero-introduction{max-width:760px;margin:50px auto 40px;color:#d1e7eb;font-size:16px;line-height:1.9;text-align:left;padding:26px 30px;border-top:1px solid #97ccd055;border-bottom:1px solid #97ccd055;background:linear-gradient(110deg,#8dcfd508,transparent)}
+.hero-introduction p:last-child{margin-bottom:0;color:#adcdd5;font-size:15px}
+.hero-actions{margin-bottom:0}
+.section-head>h2,.section-label>h2{font-size:38px;margin-top:0;letter-spacing:-.035em}
+.section-head>p{margin-top:18px}
+.method-intro{padding-left:0;border-left:0;margin:0 0 30px}
+.method-intro h3{font-size:22px}
+.experiment-setup{margin:36px 0 45px;border-top:1px solid #d1e0e4;padding-top:25px}
+.experiment-setup h3,.original-comparison h3,.evidence-heading h3,.evidence-subsection .section-head h3,.generalization .section-head h3{font-size:23px;letter-spacing:-.025em;line-height:1.35;margin-bottom:14px}
+.experiment-setup>p,.original-comparison>p{color:var(--muted);font-size:14px;line-height:1.85;max-width:900px}
+.experiment-setup>.figure-note{font-size:11px}
+.original-comparison{margin:0 0 50px}
+.original-comparison>.switch{margin:8px 0 18px}
+.original-comparison table{min-width:670px}
+.original-comparison>.figure-note{font-size:11px;margin-top:16px}
+.original-comparison>p:last-child{font-size:13px;color:#3e6a78;max-width:850px}
+.evidence-heading{margin-top:40px;margin-bottom:23px;padding-top:23px}
+.evidence-heading>p{font-size:13px}
+.result-split{margin-top:24px;margin-bottom:48px}
+.result-text .finding{font-size:17px;color:#315764;font-weight:600;line-height:1.6;margin-bottom:15px}
+.result-text>p{font-size:14px}
+.grid-line{stroke:#d9e6e8;stroke-width:1}
+.evidence-subsection{margin-top:55px;padding-top:32px}
+.evidence-subsection .section-head>p{font-size:14px;line-height:1.85}
+.alias-example>h4{font-family:Manrope,sans-serif;font-size:18px;line-height:1.4;margin:0 0 15px}
+.alias-example>p{font-size:13px;color:var(--muted);line-height:1.85;margin-top:18px}
+.evidence-pair h4,.prediction-heading h4{font-family:Manrope,sans-serif;font-size:17px;line-height:1.45;margin:0 0 10px;font-weight:600}
+.prediction-card{max-width:850px;margin:20px auto 0;background:#f9fcfc}
+.prediction-card>figcaption{font-size:11px;color:var(--muted);line-height:1.85;margin-top:18px}
+.generalization{background:transparent;border-top:1px solid #cfdee3;border-bottom:0;margin-top:54px;padding-top:32px}
+.generalization .section-head{margin-bottom:26px}
+.generalization .section-head>p{margin-top:12px;font-size:14px}
+.general-split>div>h4{font-family:Manrope,sans-serif;font-size:17px;line-height:1.4;margin:0 0 16px}
+.generalization .support-card{padding:22px}
+.report-update{color:#607a86;font-size:12px;line-height:1.85;margin:22px 0 0;padding-left:14px;border-left:2px solid #b9d2d6;max-width:850px}
+.skip-link{position:fixed;z-index:100;top:-100px;left:18px;padding:10px 15px;background:white;border:1px solid var(--line);font-size:13px}.skip-link:focus{top:10px}
+.generalization{margin-top:0;padding-top:0;background:linear-gradient(120deg,#edf2f8,#f0f6f6)}
+.generalization-inner{max-width:var(--max);padding:80px 24px;margin:auto}
+.generalization .section-head h2{font-size:38px}
+.conclusion{border-bottom:1px solid var(--line)}
+.conclusion-copy{max-width:880px;font-size:15px;line-height:1.95;color:#566f7c}
+.conclusion-copy .conclusion-lead{font-size:20px;line-height:1.65;color:#254c5b;font-weight:500;margin-bottom:23px}
+.conclusion-implication{border-left:3px solid #6babae;padding:5px 0 5px 22px;margin:30px 0 0;max-width:880px}
+.conclusion-implication h3{font-size:18px;margin-bottom:10px}
+.conclusion-implication p{font-size:14px;color:var(--muted);line-height:1.85;margin:0}
+@media(max-width:760px){.hero{padding:64px 22px 26px}.hero-introduction{margin-top:36px;font-size:14px;padding:22px 18px}.hero-introduction p:last-child{font-size:14px}.section-head>h2,.section-label>h2{font-size:32px}.experiment-setup h3,.original-comparison h3,.evidence-heading h3,.evidence-subsection .section-head h3,.generalization .section-head h3{font-size:22px}.evidence-subsection{margin-top:40px;padding-top:28px}.generalization{margin-top:40px;padding-top:28px}}
+@media(max-width:520px){.hero{padding:48px 21px 25px}.hero-introduction{font-size:13px;line-height:1.9;margin-top:29px;padding:21px 0}.hero-introduction p:last-child{font-size:13px}.section-head>h2,.section-label>h2{font-size:30px}.experiment-setup>p,.original-comparison>p{font-size:13px}.original-comparison h3,.experiment-setup h3,.evidence-heading h3,.evidence-subsection .section-head h3,.generalization .section-head h3{font-size:21px}.result-text .finding{font-size:16px}.result-text>p{font-size:13px}.report-update{font-size:11px}.prediction-card>figcaption{font-size:10px}}
+@media(max-width:760px){.generalization{margin-top:0;padding-top:0}.generalization-inner{padding:64px 22px}.generalization .section-head h2{font-size:32px}}
+@media(max-width:520px){.generalization-inner{padding:57px 21px}.generalization .section-head h2{font-size:30px}}
+@media(max-width:520px){.conclusion-copy{font-size:13px}.conclusion-copy .conclusion-lead{font-size:18px}.conclusion-implication{padding-left:16px}.conclusion-implication h3{font-size:17px}.conclusion-implication p{font-size:13px}}
