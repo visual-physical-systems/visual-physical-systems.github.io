@@ -35,3 +35,5 @@
 @media(max-width:520px){.resource-grid{grid-template-columns:1fr}}
 
 .branch-explanation{font-size:12px;line-height:1.85;color:var(--muted);max-width:850px;margin:0 auto 20px}.case-step>h4{margin:0;font-size:16px;line-height:1.6}
+
+[id]{scroll-margin-top:88px}

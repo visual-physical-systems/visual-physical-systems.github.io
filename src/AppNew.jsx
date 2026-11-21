@@ -111,6 +111,20 @@ function Resources(){return <section id="resources" className="section resources
 export default function App() {
   const report=useData(data('research.json'))
   useEffect(()=>{
+    const id=decodeURIComponent(window.location.hash.slice(1))
+    if(!id)return
+    const follow=()=>{
+      const target=document.getElementById(id)
+      if(!target)return false
+      requestAnimationFrame(()=>target.scrollIntoView({behavior:'instant',block:'start'}))
+      return true
+    }
+    if(follow())return
+    const observer=new MutationObserver(()=>{if(follow())observer.disconnect()})
+    observer.observe(document.getElementById('root'),{childList:true,subtree:true})
+    return()=>observer.disconnect()
+  },[])
+  useEffect(()=>{
     const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{
       if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}
     }),{threshold:.06})
