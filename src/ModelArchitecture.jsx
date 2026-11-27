@@ -30,12 +30,12 @@ export default function ModelArchitecture(){
           </div>
           <div className="training-feedback"><span aria-hidden="true">↖</span> Loss trains the temporal encoder; the visual backbone remains frozen.</div>
         </>}
-        <p className="architecture-note">Additional matched training conditions vary velocity supervision and action-ranking loss. Only fitting actions supply these learning labels.</p>
+        <p className="architecture-note">The original matched conditions also vary velocity-auxiliary supervision and action-ranking loss. Their fitting-action labels supervise representation learning. The separate two-stage objective study retains its action encoder and response-head initialization when fitting responses to the frozen representation.</p>
       </div>
-      <div className="stage-separator"><span>Freeze z · fit separate readouts on fitting origins</span><span aria-hidden="true">↓</span></div>
+      <div className="stage-separator"><span>Freeze z · fit readouts using the declared state/action split</span><span aria-hidden="true">↓</span></div>
       <div className="architecture-stage evaluation-stage">
-        <h4>Evaluate new physical origins and held-out actions</h4>
-        <div className="evaluation-path target-path"><div className="evaluation-purpose"><b>Current-state targets</b><span>One diagnostic branch</span></div><div className="evaluation-chain"><Node title="Frozen z → target probe" detail="Predict declared velocity summaries and hidden-branch identity."/><Arrow/><Node title="Accessibility I" detail="Score these selected pre-action targets on separate origins."/></div></div>
+        <h4>Evaluate the declared states and held-out actions</h4>
+        <div className="evaluation-path target-path"><div className="evaluation-purpose"><b>Current-state targets</b><span>One diagnostic branch</span></div><div className="evaluation-chain"><Node title="Frozen z → target probe" detail="Predict declared motion summaries and the task-specific branch target."/><Arrow/><Node title="Accessibility I" detail="Score the selected pre-action targets using the task’s physical sampling units."/></div></div>
         <div className="evaluation-path decision-path"><div className="evaluation-purpose"><b>Action consequences → decisions</b><span>Prediction followed by a choice</span></div><div className="evaluation-chain"><Node title="Frozen z + queried action a" detail="Fit an action-conditioned readout; query every held-out action."/><Arrow/><Node title="Complete predicted response" detail="Compare predicted utilities with all measured replay outcomes → RMSE."/><Arrow/><Node title="Choose argmax prediction" detail="Look up the chosen action’s true replay utility → accuracy and R."/></div></div>
       </div>
       <figcaption>Implementation: temporal encoder and training interaction head in <code>fws_boundary_factorial_v1.py</code>. The original downstream ridge uses [z, a, z⊗a] and is fitted separately after representation learning. CPU sensitivity analyses replace this readout with CV bilinear or RBF predictors while keeping the trained encoders frozen.</figcaption>

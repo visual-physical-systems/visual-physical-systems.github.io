@@ -8,3 +8,10 @@ import './explorer.css'
 import './architecture.css'
 import './hero-mechanism.css'
 createRoot(document.getElementById('root')).render(<App />)
+
+import './publication-update.css'
+
+import './visual-refresh.css'
+
+import './story-finish.css'
+import './native-demo.css'

@@ -1,9 +1,14 @@
-# Visual Physical Systems
+# Predicting Physics, Choosing Actions
 
-Interactive visual supplement for Beyond State Prediction: Learning Action Consequences in Visual Physical Systems.
+Public project page for the Zenodo preprint (10.5281/zenodo.24585529) and complete research report (10.5281/zenodo.24587576), by Zhenghe Guo.
 
-The Method diagrams explain simulator replay, representation learning, and the two downstream evaluation paths. Experiments connect original observation histories, saved particle states, controls, and measured outcomes. Scope describes action-support effects and the extent of replication.
+The interactive cases preserve original simulator media. Current tables distinguish physical configurations, paired contexts, retrospective oracles, fitted predictors and declared utilities. The report reader serves the revised 33-page report.
 
-`npm ci`, `npm run build`, and `npm run preview` build and preview the site. GitHub Pages publishes the static build from main. No report, personal page, or author contact is included.
+`npm ci`, `npm run build`, `npm run preview`.
 
-Numerical arrays and experimental media retain their source values. Source filenames and hashes identify the retained records; local storage directory names have been removed. No new simulator rollouts or representation training were performed to create the visual supplement.
+
+## November 2026 publication update
+
+Public paper DOI: https://doi.org/10.5281/zenodo.24585529 . Complete report DOI: https://doi.org/10.5281/zenodo.24587576 . The original report reader remains under `report/` with 33 revised pages.
+
+The hero uses native MP4: a static, caption-free title mosaic and a 18-second research teaser, each with a portrait version. Hover Title/Demo to preview; click to pin. Demo provenance is shipped in `public/assets/demo/DEMO_PROVENANCE.json`. Protocol diagrams include editable `.drawio`, SVG and PNG sources. Scientific figures and displayed comparisons use the revised manuscript data, preserving archived results with their sampling interpretation.
