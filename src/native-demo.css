@@ -30,5 +30,5 @@
 @media(max-width:600px){.hero-view-switch button{font-size:15px!important;min-width:70px;padding:7px 13px!important}.native-film-controls{right:16px;bottom:18px}}
 .native-film video{position:absolute;inset:0}.native-film .title-mosaic{object-fit:cover}.hero-wrap[data-view=title] .native-film .title-mosaic{opacity:.62;filter:saturate(.5)}.hero-wrap[data-view=title] .native-film .demo-film{opacity:0;filter:none}.hero-wrap[data-view=demo] .native-film .title-mosaic{opacity:0}.hero-wrap[data-view=demo] .native-film .demo-film{opacity:1}.hero-wrap[data-view=title] .native-film:after{background:linear-gradient(115deg,#344c61e8,#465f74b8 50%,#344c61db),linear-gradient(180deg,#3c536890,#3c536840 70%,#3c5368b0)}
 
-/* Title is a static, caption-free mosaic. Only the Demo film plays. */
+/* Title loops the recorded multi-case mosaic beneath the same caption-free gradient. */
 .native-film .title-mosaic{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .4s}.hero-wrap[data-view=title] .native-film .title-mosaic{opacity:.9;filter:saturate(.45)}.hero-wrap[data-view=title] .native-film:after{background:linear-gradient(180deg,#3c5368ff 0%,#3c5368fa 28%,#3c5368ce 44%,#3c53685e 70%,#3c53683b 90%,#3c5368a6 100%)}
